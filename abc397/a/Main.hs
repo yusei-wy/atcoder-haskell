@@ -2,8 +2,11 @@ module Main where
 
 main :: IO ()
 main = do
-    s <- getLine
-    print $ solve s
+    x <- readLn :: IO Float
+    print $ solve x
 
-solve :: String -> Int
-solve s = undefined
+solve :: Float -> Int
+solve x
+    | x >= 38 = 1
+    | x < 38 && x >= 37.5 = 2
+    | otherwise = 3
