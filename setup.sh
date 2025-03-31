@@ -1,6 +1,6 @@
 #!/bin/bash
 contest=$1
-problems=("a" "b" "c" "d")
+problems=("a" "b" "c")
 
 mkdir -p "$contest"
 for p in "${problems[@]}"; do
