@@ -1,22 +1,24 @@
 module Main where
 
-import Control.Monad (replicateM)
 import Data.ByteString.Char8 qualified as BS
+import Data.Maybe (fromJust)
 
+data Plan = Plan {time :: Int, x :: Int, y :: Int} deriving (Show, Eq)
 data YesNo = Yes | No
 instance Show YesNo where
     show Yes = "Yes"
     show No = "No"
 
-data Plan = Plan {time :: Int, x :: Int, y :: Int} deriving (Show, Eq)
-
 main :: IO ()
 main = do
-    n <- readLn
-    plans <- replicateM n $ do
-        [t, x, y] <- map read . words <$> getLine
-        return $ Plan t x y
+    input <- BS.getContents
+    let ls = BS.lines input
+        n = readInt (head ls)
+        plans = map ((\[t, x, y] -> Plan t x y) . map readInt . BS.words) (take n (tail ls))
     print $ solve (Plan 0 0 0) plans
+
+readInt :: BS.ByteString -> Int
+readInt = fst . fromJust . BS.readInt
 
 solve :: Plan -> [Plan] -> YesNo
 solve _ [] = Yes
@@ -27,6 +29,6 @@ solve prev (curr : xs)
 
 isReachable :: Plan -> Plan -> Bool
 isReachable prev curr =
-    let mDistance = abs (x curr - x prev) + abs (y curr - y prev)
-        t = time curr - time prev
+    let !mDistance = abs (x curr - x prev) + abs (y curr - y prev)
+        !t = time curr - time prev
      in mDistance <= t && even mDistance == even t
