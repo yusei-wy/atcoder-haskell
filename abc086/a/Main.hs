@@ -2,10 +2,8 @@ module Main where
 
 main :: IO ()
 main = do
-  [a, b] <- map read . words <$> getLine :: IO [Int]
-  putStr $ solve a b
+    s <- getLine
+    print $ solve s
 
-solve :: Int -> Int -> String
-solve a b
-  | even $ a * b = "Even"
-  | otherwise = "Odd"
+solve :: String -> Int
+solve s = undefined
