@@ -5,3 +5,138 @@ dependencies:
 ghc-options:
   - -Wall
 executables:
+  abc049-a:
+    main: Main.hs
+    source-dirs: abc049-a
+  abc049-b:
+    main: Main.hs
+    source-dirs: abc049-b
+  abc049-c:
+    main: Main.hs
+    source-dirs: abc049-c
+  abc081-a:
+    main: Main.hs
+    source-dirs: abc081-a
+  abc081-b:
+    main: Main.hs
+    source-dirs: abc081-b
+  abc081-c:
+    main: Main.hs
+    source-dirs: abc081-c
+  abc081-d:
+    main: Main.hs
+    source-dirs: abc081-d
+  abc083-a:
+    main: Main.hs
+    source-dirs: abc083-a
+  abc083-b:
+    main: Main.hs
+    source-dirs: abc083-b
+  abc083-c:
+    main: Main.hs
+    source-dirs: abc083-c
+  abc083-d:
+    main: Main.hs
+    source-dirs: abc083-d
+  abc085-a:
+    main: Main.hs
+    source-dirs: abc085-a
+  abc085-b:
+    main: Main.hs
+    source-dirs: abc085-b
+  abc085-c:
+    main: Main.hs
+    source-dirs: abc085-c
+  abc085-d:
+    main: Main.hs
+    source-dirs: abc085-d
+  abc086-a:
+    main: Main.hs
+    source-dirs: abc086-a
+  abc086-b:
+    main: Main.hs
+    source-dirs: abc086-b
+  abc086-c:
+    main: Main.hs
+    source-dirs: abc086-c
+  abc086-d:
+    main: Main.hs
+    source-dirs: abc086-d
+  abc087-a:
+    main: Main.hs
+    source-dirs: abc087-a
+  abc087-b:
+    main: Main.hs
+    source-dirs: abc087-b
+  abc087-c:
+    main: Main.hs
+    source-dirs: abc087-c
+  abc087-d:
+    main: Main.hs
+    source-dirs: abc087-d
+  abc088-a:
+    main: Main.hs
+    source-dirs: abc088-a
+  abc088-b:
+    main: Main.hs
+    source-dirs: abc088-b
+  abc088-c:
+    main: Main.hs
+    source-dirs: abc088-c
+  abc088-d:
+    main: Main.hs
+    source-dirs: abc088-d
+  abc397-a:
+    main: Main.hs
+    source-dirs: abc397-a
+  abc397-b:
+    main: Main.hs
+    source-dirs: abc397-b
+  abc397-c:
+    main: Main.hs
+    source-dirs: abc397-c
+  abc397-d:
+    main: Main.hs
+    source-dirs: abc397-d
+  abc398-a:
+    main: Main.hs
+    source-dirs: abc398-a
+  abc398-b:
+    main: Main.hs
+    source-dirs: abc398-b
+  abc398-c:
+    main: Main.hs
+    source-dirs: abc398-c
+  abc398-d:
+    main: Main.hs
+    source-dirs: abc398-d
+  abc399-a:
+    main: Main.hs
+    source-dirs: abc399-a
+  abc399-b:
+    main: Main.hs
+    source-dirs: abc399-b
+  abc399-c:
+    main: Main.hs
+    source-dirs: abc399-c
+  abc399-d:
+    main: Main.hs
+    source-dirs: abc399-d
+  abc401-a:
+    main: Main.hs
+    source-dirs: abc401-a
+  abc401-b:
+    main: Main.hs
+    source-dirs: abc401-b
+  abc401-c:
+    main: Main.hs
+    source-dirs: abc401-c
+  abc404-a:
+    main: Main.hs
+    source-dirs: abc404-a
+  abc404-b:
+    main: Main.hs
+    source-dirs: abc404-b
+  abc405-a:
+    main: Main.hs
+    source-dirs: abc405-a
