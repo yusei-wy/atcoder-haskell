@@ -1,7 +1,6 @@
-jmodule Main where
+module Main where
 
 import Control.Monad (replicateM)
-import Debug.Trace (traceShow)
 
 main :: IO ()
 main = do

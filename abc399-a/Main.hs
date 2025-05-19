@@ -1,10 +1,8 @@
 module Main where
 
-import Control.Monad
-
 main :: IO ()
 main = do
-    n <- readLn :: IO Int
+    _ <- readLn :: IO Int
     s <- getLine
     t <- getLine
     print $ solve s t

@@ -1,31 +1,641 @@
-cabal-version:       2.2
+cabal-version: 1.12
 
-name:                atcoder-haskell
-version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/atcoder-haskell#readme
-license:             BSD-3-Clause
-license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2025 Author name here
-category:            Web
-build-type:          Simple
-extra-source-files:  README.md
-                     CHANGELOG.md
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
 
-executable atcoder-haskell
-  hs-source-dirs:      src
-  main-is:             Main.hs
-  default-language:    Haskell2010
-  build-depends:       base >= 4.7 && < 5
-  ghc-options:         -Wall
-                       -Wcompat
-                       -Widentities
-                       -Wincomplete-record-updates
-                       -Wincomplete-uni-patterns
-                       -Wmissing-export-lists
-                       -Wmissing-home-modules
-                       -Wpartial-fields
-                       -Wredundant-constraints
+name:           atcoder-haskell
+version:        0.1.0.0
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+executable abc049-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc049-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc049-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc049-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc049-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc049-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc081-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc081-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc081-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc081-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc081-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc081-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc081-d
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc081-d
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc083-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc083-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc083-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc083-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc083-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc083-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc083-d
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc083-d
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc085-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc085-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc085-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc085-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc085-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc085-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc085-d
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc085-d
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc086-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc086-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc086-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc086-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc086-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc086-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc086-d
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc086-d
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc087-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc087-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc087-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc087-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc087-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc087-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc087-d
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc087-d
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc088-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc088-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc088-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc088-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc088-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc088-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc088-d
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc088-d
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc397-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc397-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc397-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc397-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc397-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc397-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc397-d
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc397-d
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc398-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc398-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc398-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc398-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc398-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc398-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc398-d
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc398-d
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc399-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc399-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc399-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc399-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc399-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc399-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc399-d
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc399-d
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc401-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc401-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc401-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc401-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc401-c
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc401-c
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc404-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc404-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc404-b
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc404-b
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010
+
+executable abc405-a
+  main-is: Main.hs
+  other-modules:
+      Paths_atcoder_haskell
+  hs-source-dirs:
+      abc405-a
+  ghc-options: -Wall
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+  default-language: Haskell2010

@@ -1,7 +1,7 @@
 module Main where
 
 import Control.Monad (replicateM)
-import Data.Set qualified as Set
+import qualified Data.Set as Set
 
 main :: IO ()
 main = do

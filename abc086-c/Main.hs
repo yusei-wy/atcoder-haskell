@@ -1,6 +1,8 @@
+{-# LANGUAGE BangPatterns #-}
+
 module Main where
 
-import Data.ByteString.Char8 qualified as BS
+import qualified Data.ByteString.Char8 as BS
 import Data.Maybe (fromJust)
 
 data Plan = Plan {time :: Int, x :: Int, y :: Int} deriving (Show, Eq)

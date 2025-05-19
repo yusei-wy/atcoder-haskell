@@ -1,8 +1,7 @@
 module Main where
 
 import Data.List (find)
-import Data.Maybe (fromMaybe, listToMaybe)
-import System.FilePath (isValid)
+import Data.Maybe (fromMaybe)
 
 data ThreeInts = ThreeInts Int Int Int
 instance Show ThreeInts where
