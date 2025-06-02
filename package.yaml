@@ -5,6 +5,7 @@ dependencies:
   - base >= 4.7 && < 5
   - bytestring
   - containers
+  - unordered-containers
 ghc-options:
   - -Wall
 executables:
@@ -86,9 +87,6 @@ executables:
   abc088-c:
     main: Main.hs
     source-dirs: abc088-c
-  abc088-d:
-    main: Main.hs
-    source-dirs: abc088-d
   abc397-a:
     main: Main.hs
     source-dirs: abc397-a
@@ -107,9 +105,6 @@ executables:
   abc398-b:
     main: Main.hs
     source-dirs: abc398-b
-  abc398-c:
-    main: Main.hs
-    source-dirs: abc398-c
   abc398-d:
     main: Main.hs
     source-dirs: abc398-d
@@ -119,9 +114,6 @@ executables:
   abc399-b:
     main: Main.hs
     source-dirs: abc399-b
-  abc399-c:
-    main: Main.hs
-    source-dirs: abc399-c
   abc399-d:
     main: Main.hs
     source-dirs: abc399-d
@@ -143,3 +135,6 @@ executables:
   abc405-a:
     main: Main.hs
     source-dirs: abc405-a
+  abc405-b:
+    main: Main.hs
+    source-dirs: abc405-b
