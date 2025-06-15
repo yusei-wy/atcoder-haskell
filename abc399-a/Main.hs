@@ -9,4 +9,3 @@ main = do
 
 solve :: String -> String -> Int
 solve s t = length $ [x | (x, y) <- zip s t, x /= y]
-h
