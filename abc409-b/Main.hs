@@ -1,22 +1,16 @@
 module Main where
 
+import Data.List (find, sortBy)
+import Data.Maybe (fromMaybe)
+
 main :: IO ()
 main = do
     n <- readLn :: IO Int
     a <- getInts
-    print $ solve n a
+    let sorted = (sortBy (flip compare) a)
+        xs = [1 .. n]
+        asn = fromMaybe 0 $ find (\x -> sorted !! (x - 1) >= x) [n, n - 1 .. 1]
+    print asn
 
 getInts :: IO [Int]
 getInts = map read . words <$> getLine :: IO [Int]
-
-{-
-x 以上の値が list a に x 回以上現れる時、最大の x を返す
-
-案1.
-1. list 内包表記で一致するものを filter
-2. max を取得
-3. output
--}
-solve :: Int -> [Int] -> Int
-solve n xs =
-    maximum [x | x <- [0 .. n], length [y | y <- xs, y >= x] >= x]
