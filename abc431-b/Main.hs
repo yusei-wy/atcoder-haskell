@@ -19,22 +19,15 @@ main = do
 
     let allStates =
             scanl
-                -- 畳み込み関数
                 ( \(currentX, currentUsed) index ->
                     let idx = index - 1
-                        -- used 配列の現在の値を確認
                         used = currentUsed !! idx
-                        -- x の新しい値を計算
                         op = if used then (-) else (+)
                         newX = currentX `op` (weights !! idx)
                         newUsed = updatedAt idx (not used) currentUsed
-                     in -- 次の計算を返す
-                        (newX, newUsed)
+                     in (newX, newUsed)
                 )
-                -- 初期状態
                 (x, usedWeights)
-                -- 操作するリスト
                 queries
 
-    let xValues = map fst allStates
-    mapM_ print $ drop 1 xValues
+    mapM_ print $ drop 1 $ map fst allStates
