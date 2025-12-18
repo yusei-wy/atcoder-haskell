@@ -1,10 +1,13 @@
 module Main where
 
 import Control.Monad (replicateM)
+import Data.Set (Set, member)
+import Data.Set qualified as Set
 
-updatedAt :: Int -> a -> [a] -> [a]
-updatedAt n newVal list =
-    take n list ++ [newVal] ++ drop (n + 1) list
+toggleSet :: (Ord a) => a -> Set a -> Set a
+toggleSet x set
+    | Set.member x set = Set.delete x set
+    | otherwise = Set.insert x set
 
 main :: IO ()
 main = do
@@ -14,20 +17,17 @@ main = do
     q <- readLn :: IO Int
     queries <- replicateM q readLn :: IO [Int]
 
-    -- weights[i] が使用済みなら減算、未使用なら加算
-    let usedWeights = replicate n False
-
     let allStates =
             scanl
-                ( \(currentX, currentUsed) index ->
+                ( \(cur, acc) index ->
                     let idx = index - 1
-                        used = currentUsed !! idx
+                        used = Set.member index acc
                         op = if used then (-) else (+)
-                        newX = currentX `op` (weights !! idx)
-                        newUsed = updatedAt idx (not used) currentUsed
-                     in (newX, newUsed)
+                        newCur = cur `op` (weights !! idx)
+                        newAcc = toggleSet index acc
+                     in (newCur, newAcc)
                 )
-                (x, usedWeights)
+                (x, Set.empty)
                 queries
 
     mapM_ print $ drop 1 $ map fst allStates
