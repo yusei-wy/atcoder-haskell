@@ -1,7 +1,7 @@
 module Main where
 
 import Control.Monad (replicateM)
-import Data.Set (Set, member)
+import Data.Set (Set)
 import Data.Set qualified as Set
 
 toggleSet :: (Ord a) => a -> Set a -> Set a
@@ -12,7 +12,7 @@ toggleSet x set
 main :: IO ()
 main = do
     x <- readLn :: IO Int
-    n <- readLn :: IO Int
+    _ <- readLn :: IO Int
     weights <- map read . words <$> getLine :: IO [Int]
     q <- readLn :: IO Int
     queries <- replicateM q readLn :: IO [Int]
@@ -20,10 +20,9 @@ main = do
     let allStates =
             scanl
                 ( \(cur, acc) index ->
-                    let idx = index - 1
-                        used = Set.member index acc
+                    let used = Set.member index acc
                         op = if used then (-) else (+)
-                        newCur = cur `op` (weights !! idx)
+                        newCur = cur `op` (weights !! (index - 1))
                         newAcc = toggleSet index acc
                      in (newCur, newAcc)
                 )
