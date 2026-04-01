@@ -11,9 +11,11 @@ main = do
     a <- readInts
 
     let step (acc, openAt) x
-        | openAt >= t = (acc, openAt)
-        | openAt > x = (acc, openAt)
-        | otherwise = (acc + (x - openAt), openAt + 100)
-      (ans, _) = foldl' step (0, 0) a
+            | openAt >= t = (acc, openAt)
+            | openAt > x = (acc, openAt)
+            | otherwise = (acc + (min x t - openAt), x + 100)
+        (ans, openAt) = foldl' step (0, 0) a
 
-    print $ ans
+    if openAt < t
+        then print $ ans + (t - openAt)
+        else print $ ans
