@@ -11,11 +11,12 @@ main = do
     a <- readInts
 
     let step (acc, openAt) x
-            | openAt >= t = (acc, openAt)
-            | openAt > x = (acc, openAt)
-            | otherwise = (acc + (min x t - openAt), x + 100)
-        (ans, openAt) = foldl' step (0, 0) a
+            | openAt >= closeAt = (acc, openAt)
+            | otherwise = (acc + (closeAt - openAt), x + 100)
+          where
+            -- 閉じる時間は a[i] or x+100
+            closeAt = min x t
+        -- T 確実に閉じる時間なので末尾に追加することで openAt > last x のケースでも正しく時間を計算できる
+        (ans, _) = foldl' step (0, 0) (a ++ [t])
 
-    if openAt < t
-        then print $ ans + (t - openAt)
-        else print $ ans
+    print ans
