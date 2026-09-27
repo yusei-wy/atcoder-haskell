@@ -1,6 +1,6 @@
-# abcXXX-X
+# {{PROBLEM_ID}}
 
-<!-- 問題 URL -->
+<!-- {{PROBLEM_URL}} -->
 
 ## 解く前
 
